@@ -1,0 +1,15 @@
+{
+    "manifest_version": 2,
+    "name": "Phonetic English",
+    "description": "Uses a new alphabet to replace English words with phonetic spelling",
+    "version": "0.5",
+    "content_scripts": [{
+        "matches": ["*://*/*"],
+        "js": ["content.js"],
+        "run_at": "document_end"
+    }],
+    "icons": {
+      "16": "icon16.png",
+      "128": "icon128.png"
+    }
+}
